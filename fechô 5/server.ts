@@ -7,13 +7,17 @@ import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 import crypto from "crypto";
+import { createClient } from '@supabase/supabase-js'
 
+const supabase = createClient(
+  'https://ivzhyvdreiugtsxxgajq.supabase.co ',
+  'sb_publishable_8oLvTxusIUQv13EdVvu6Qw_ZMZxhP6_Y'
+)
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const db = new Database("fecho.db");
 db.pragma('foreign_keys = ON');
 const JWT_SECRET = process.env.JWT_SECRET || "fecho-secret-key-123";
 
