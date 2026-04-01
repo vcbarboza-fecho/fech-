@@ -1,0 +1,5 @@
+{
+  "name": "Fechô",
+  "description": "Um sistema abrangente de gerenciamento de comandas de bar com registro de produtos, rastreamento de consumo individual e resumos de fechamento de conta.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--bg-color);
+  --color-foreground: var(--text-color);
+}
+
+@layer base {
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --muted-bg: #f3f4f6;
+    --muted-text: #666666;
+    --input-bg: #ffffff;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+}
