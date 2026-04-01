@@ -1498,30 +1498,6 @@ function UserManagementView({ token, currentUser, companyInfo, onUpdateCompanyIn
           </form>
         </Modal>
       )}
-
-      {/* Zona de Perigo */}
-      <section className="bg-white p-6 rounded-3xl border border-red-100 shadow-sm">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="p-2 bg-red-50 rounded-xl">
-            <AlertTriangle className="w-5 h-5 text-red-500" />
-          </div>
-          <div>
-            <h2 className="text-lg font-bold text-red-600">Zona de Perigo</h2>
-            <p className="text-xs text-black/40 font-medium">Ações irreversíveis que afetam todo o sistema</p>
-          </div>
-        </div>
-
-        <div className="p-4 bg-red-50 rounded-2xl border border-red-100">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <div>
-              <h3 className="font-bold text-red-600 text-sm">Reiniciar Banco de Dados</h3>
-              <p className="text-xs text-red-400 mt-1">Isso apagará todas as comandas, itens, pagamentos e histórico. Os usuários e dados da empresa serão mantidos.</p>
-            </div>
-            <button 
-              onClick={onResetDatabase}
-              className="w-full sm:w-auto px-6 py-3 bg-red-500 text-white rounded-xl font-bold hover:bg-red-600 transition-all shadow-lg shadow-red-500/20"
-            >
-              Reiniciar Agora
             </button>
           </div>
         </div>
